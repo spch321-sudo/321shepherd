@@ -1,4 +1,4 @@
-/* 321禱告服事 · 美圖影音（小智寫祝福、配樂、錄音／卡片影片／自拍影片、我的作品）
+/* 321牧養服事 · 美圖影音（小智寫祝福、配樂、錄音／卡片影片／自拍影片、我的作品）
    進入美圖工作室才載入，不佔主程式體積。移植自《321互動聖經》。 */
 (function () {
 'use strict';
@@ -624,7 +624,7 @@ async function saveWork(blob, type, kind, dur) {
     paintBox(); toast2(kind === 'video' ? M('recDoneV') : M('recDoneA'), 3600); return true;
   } catch (e) { toast2(M('saveErr') + (e && e.message || e), 4000); return false; }
 }
-function fileName(kind, mime) { return '321prayer-' + (kind === 'video' ? 'video' : 'voice') + '-' + now() + extOf(mime); }
+function fileName(kind, mime) { return '321shepherd-' + (kind === 'video' ? 'video' : 'voice') + '-' + now() + extOf(mime); }
 async function shareBlob(blob, mime, kind, dlOnly) {
   const name = fileName(kind, mime);
   let f = null; try { f = new File([blob], name, { type: mime }); } catch (e) { }

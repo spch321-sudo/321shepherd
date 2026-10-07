@@ -1,11 +1,11 @@
-/* 321禱告服事 Service Worker —— 自動更新版
+/* 321牧養服事 Service Worker —— 自動更新版
    ‧ 每次發佈 V 都不同 → 瀏覽器偵測到 sw.js 位元組改變就安裝新 SW
    ‧ install：skipWaiting；預載用 cache:'reload' 繞過 HTTP 快取（GitHub Pages 會快取 10 分鐘）
    ‧ activate：刪舊快取、clients.claim，並通知所有頁面；背景中的舊頁面直接重新導向成新版
      （連「沒有更新程式碼的舊版頁面」也能被帶到新版）
    ‧ fetch：HTML／JS／JSON 網路優先（no-cache），離線才用快取；圖片快取優先；影音不攔截（Range 請求） */
-var V = 'pr321-1.0.202610070802';
-var VER = '1.0.202610070802';
+var V = 'sh321-1.0.202610070856';
+var VER = '1.0.202610070856';
 var SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './hero-s.jpg', './c-zh.json', './c-zs.json', './c-en.json', './hero.jpg', './icon-32.png', './lang-zs.json', './lang-en.json', './media.js'];
 self.addEventListener('install', function (e) {
   self.skipWaiting();

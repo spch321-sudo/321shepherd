@@ -1,14 +1,14 @@
 {
- "name": "321禱告服事",
- "short_name": "321禱告服事",
- "description": "321學神院服事技能課程：從禱告的人，成為為人禱告的僕人。",
+ "name": "321牧養服事",
+ "short_name": "321牧養服事",
+ "description": "321學神院服事技能課程：先作被牧養的羊，再作捨己的牧人。",
  "id": "./",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",
  "orientation": "portrait",
  "background_color": "#F6F3EC",
- "theme_color": "#1F3A93",
+ "theme_color": "#2E6B3F",
  "lang": "zh-Hant",
  "icons": [
   {
